@@ -1,4 +1,58 @@
+/* CSS stands for 'Cascading style sheets' */
+
+/* Twilight font yaaay! */
+@font-face {
+    font-family: 'Zephyr';
+    src: url('fonts/zephyr.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /*
+
+    A different background that I currently do not want. Pretty GIF though.
+
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWsxcTF5azQ2NjJqdWxsZmpiaHZ3anZrYjZldjZqMDBwMjRmb3JmaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2jmma5yWrWUF6uaBkw/giphy.gif');
+    background-size: cover;
+
+    height: 100vh;
+    padding:0;
+    margin:0;
+    */
+
+    background-image: url('https://i.ibb.co/f0djYv5/ss157.gif');
+    background-repeat: repeat; 
+
+    /* Body text uses Cambria - my favourite font! */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#box {
+    width: 70%;
+    max-width: 900px;
+
+    margin: 100px auto;
+    padding: 30px;
+
+    background-color: rgb(235, 203, 255);
+
+    text-align: center;
+
+    border: 5px outset #d11b7f;
+    border-radius: 15px;
+}
+
+/* Makes the image smaller */
+#box img {
+    width: 300px;
+    height: auto;
+}
+
+/* Heading1 uses the Twilight font */
 h1 {
-  color: rgba(45, 45, 131, 0.687);
-  font-size: 50px;
+    font-family: 'Zephyr';
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin: 0
 }
