@@ -1,8 +1,8 @@
 // Original code from: https://www.snazzyspace.com/tumblr/mouse-sparkles.php. 
 // Modernised as had 9+ errors. 
 
-const colour = "#e79ce2";
-const sparkles = 120;
+const colour = "#0021f3";
+const sparkles = 50;
 
 const particles = [];
 
@@ -96,5 +96,17 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-// Start the animation
+// Starts the animation
 animate();
+
+// Plays a ding when hovering over any of the nav boxes
+const navBoxes = document.querySelectorAll ('#nav-box > div');
+
+const hoverSound = new Audio('sounds/ding_1.mp3'); hoverSound.volume = 0.25;
+
+navBoxes.forEach(box => {
+    box.addEventListener('mouseenter', () => {
+        hoverSound.currentTime = 0;
+        hoverSound.play();
+    });
+});

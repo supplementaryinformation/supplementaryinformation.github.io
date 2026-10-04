@@ -3,29 +3,178 @@
 
 <!-- Metadata that is not styled -->
 <head>
+  <!-- Character encoding anf viewport size -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Supplementary Information</title> <!-- This is the title of the browser's tab -->
-  <link rel="stylesheet" href="style.css" /> <!-- Loads the style.css doc that is in the same folder as the index.html -->
+  <!-- This is the title of the browser's tab -->
+  <title>Supplementary Information</title> 
+
+  <!-- Descroptions that pop up on Google and stuff -->
+  <meta content = "Sofia's personal website! Yay!">
+
+  <!-- The little icon in the tab (on the left)-->
+  <link href = 'images/moon.ico' rel = 'icon' type = 'image/x-icon'>
+
+  <!-- Loads the style.css doc that is in the same folder as the index.html -->
+  <link rel="stylesheet" href="style.css" /> 
 
 </head>
 
 <body>
 
-  <div id = 'box'>
+  <div id = 'header-title'>
 
-    <h1> Webstite under construction! 
-      <br> Please come back later... 
-    </h1>
+    <marquee behavior = 'alternate' direction = 'left' scrollamount = '6'>
+      <img src = 'images/cat_slider.jpg' width = '100' height: 'auto'>
+    </marquee>
 
-    <p> Мамуля, привет!!! </p>
+    <h1> ⋆˚꩜｡ sofia's corner of the internet ✶⋆.˚ </h1>
 
-    <img src = 'images/employed_diva.jpg' style = 'max-width: 100%; height: auto';>
-
-    <p> Thanks! 
-      <br> Sofia
+    <p> 
+      Hi there, and welcome to my website!
+      <br>
+      This is my always-developing creative project, and my current presence on the web. 
+      I have grown tired of any and all social media, but want to somehow remain present on the web while feeling productive and artistic. 
+      On this page you will be able to find: 
     </p>
+
+    <br>
+
+      <!-- Navigation box from the main page to the other pages -->
+    <div id="nav-box"> 
+
+        <a href="about.html" id="some-things-about-me-box">
+            <h2>⏾ some things about me</h2>
+        </a>
+
+        <a href="portfolio.html" id="some-things-that-I-have-made-box">
+            <h2>✬ some things that I made</h2>
+        </a>
+
+        <a href="inspiration.html" id="some-inspiration-box">
+            <h2>❥ some inspiration</h2>
+        </a>
+
+    </div>
+
+    <img id="moon-animated" src="images/nasa-moon-spin.gif">
+
+    <br>
+
+    <div id = 'website-updates'>
+
+    <h2>
+      <u> 04/10/26 </u>
+    </h2>
+
+    <p>
+      Added the overflow box for website updates, as well as clickable links to other pages (currently empty).
+      Feels like a bit too much is going on. Already have a theme in mind, so will begin working - every page will
+      be different. Will add links to credit button artists!
+    </p>
+
+    <h2>
+      <u> 03/10/26 </u>
+    </h2>
+
+    <p>
+      Infinite buttons marquee at the bottom of the page added, in addition to the animated boxes that change colour,
+      make a sound, and glow once you hover over them. 
+    </p>
+
+    <h2>
+      <u> 27/09/26 </u>
+    </h2>
+
+    <p>
+      Made the 'Under construction' index page. Added (current) gif background, first box, first image, first marquee, 
+      as well as imported the Twilight font (important). Most imporantly, however, got the custom aniamted cat and sparkle 
+      cursor to work with JS. Have some big ideas for website. Genuinely addicted making edits and pushing gits updates. 
+    </p>
+
+    <h2>
+      <u> 25/09/26 </u>
+    </h2>
+
+    <p>
+      Website created! Happy Birthday! ⋆✴︎˚｡⋆ 🎂  ༘⋆⋆.𐙚 ̊
+    </p>
+
+    </div>
+
+    <!-- Makes the infinite marquee that is controled by the CSS file, as the real marquee doesn't work like that (L)-->
+    <div class="marquee-container">
+
+      <div class="marquee">
+
+        <div class="marquee-track">
+          <div class="marquee-item"> <img src = 'images/buttons/button1.gif' alt = 'button-free-palestine'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button2.gif' alt = 'button-tonic-funk'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button3.gif' alt = 'button-happy-blog'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button4.png' alt = 'button-butts-frog'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button5.gif' alt = 'button-piss'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button6.png' alt = 'button-she-her'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button7.gif' alt = 'button-firefox'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button8.gif' alt = 'button-ditch-social-media'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button9.jpg' alt = 'button-responsive-website'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button10.png' alt = 'button-made-vscode'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button11.gif' alt = 'button-learn-html'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button12.gif' alt = 'button-best-viewed-pc'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button13.gif' alt = 'button-www'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button14.gif' alt = 'button-design-passion'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button15.png' alt = 'button-love-sans'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button16.gif' alt = 'button-lynx-compatible'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button17.gif' alt = 'button-get-firefox'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button18.png' alt = 'button-feddy'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button19.gif' alt = 'button-peace-now'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button20.gif' alt = 'button-pride-now'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button21.gif' alt = 'button-made-macintosh'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button22.png' alt = 'button-mp3-warrior'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button23.gif' alt = 'button-no-lag-browser'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button24.gif' alt = 'button-yoohoo'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button25.gif' alt = 'button-internet-exploder'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button26.gif' alt = 'button-support-wikipedia' height = '31' width = '88'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button28.gif' alt = 'button-internet-privacy'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button29.gif' alt = 'button-3rd-planet-mysetery'> </div>
+
+        </div>
+
+        <div class="marquee-track" aria-hidden="true">
+          <div class="marquee-item"> <img src = 'images/buttons/button1.gif' alt = 'button-free-palestine'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button2.gif' alt = 'button-tonic-funk'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button3.gif' alt = 'button-happy-blog'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button4.png' alt = 'button-butts-frog'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button5.gif' alt = 'button-piss'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button6.png' alt = 'button-she-her'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button7.gif' alt = 'button-firefox'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button8.gif' alt = 'button-ditch-social-media'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button9.jpg' alt = 'button-responsive-website'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button10.png' alt = 'button-made-vscode'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button11.gif' alt = 'button-learn-html'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button12.gif' alt = 'button-best-viewed-pc'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button13.gif' alt = 'button-www'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button14.gif' alt = 'button-design-passion'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button15.png' alt = 'button-love-sans'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button16.gif' alt = 'button-lynx-compatible'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button17.gif' alt = 'button-get-firefox'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button18.png' alt = 'button-feddy'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button19.gif' alt = 'button-peace-now'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button20.gif' alt = 'button-pride-now'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button21.gif' alt = 'button-made-macintosh'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button22.png' alt = 'button-mp3-warrior'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button23.gif' alt = 'button-no-lag-browser'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button24.gif' alt = 'button-yoohoo'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button25.gif' alt = 'button-internet-exploder'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button26.gif' alt = 'button-support-wikipedia' height = '31' width = '88'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button28.gif' alt = 'button-internet-privacy'> </div>
+          <div class="marquee-item"> <img src = 'images/buttons/button29.gif' alt = 'button-3rd-planet-mysetery'> </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 

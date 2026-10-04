@@ -28,19 +28,19 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#box {
+#header-title {
+    position: relative;
+
     width: 70%;
     max-width: 900px;
 
     margin: 100px auto;
     padding: 30px;
 
-    background-color: rgb(235, 203, 255);
+    background-color: #eeeeee;
+    border-radius: 25px;
 
     text-align: center;
-
-    border: 5px outset #d11b7f;
-    border-radius: 15px;
 }
 
 /* Makes the image smaller */
@@ -54,5 +54,136 @@ h1 {
     font-family: 'Zephyr';
     color: rgb(0, 0, 0);
     font-size: 40px;
-    margin: 0
+    margin: 0;
+}
+
+/* Heading2 also uses the Twilight font, but smaller */
+h2 {
+    font-family: 'Zephyr';
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin: 4px;
+}
+
+#header-title p {
+    text-align: justify;
+}
+
+#nav-box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+#nav-box > a {
+    flex: 1;
+    text-align: center;
+
+    /* Makes the entire box clickable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Removes normal link styling */
+    text-decoration: none;
+    color: black;
+
+    border: 2px groove black;
+    border-radius: 25px;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#some-things-about-me-box, 
+#some-things-that-I-have-made-box, 
+#some-inspiration-box {
+    width: 30%;
+    text-align: center;
+    border: 2px groove black;
+    border-radius: 25px;
+
+    transition: transform 0.2s ease, 
+                background-color 0.2s ease, 
+                box-shadow 0.2s ease;
+}
+
+#some-things-about-me-box:hover,
+#some-things-that-I-have-made-box:hover,
+#some-inspiration-box:hover{ 
+    transform: scale(1.05);
+    background-color: #d9d3fa;
+    border-color: #413b5cb3;
+    box-shadow: 0 0 15px #8b7fc7b3;
+} 
+
+#nav-box h2 {
+    text-align: center;
+}
+
+#moon-animated {
+    position: absolute;
+    width: 100px;
+    height: auto;
+
+    left: -50px;
+    top: 10px;
+
+    transform: translateY(-50%);
+}
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 10px;
+  padding: 0 12px;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#website-updates { 
+    height: 150px;
+    overflow-y: auto;
+    margin: 30px;
+    padding: 15px;
+    border: 2px groove black;
+    border-radius: 15px;
+    text-align: justify;
+
+    transition: background-color 0.2s ease, 
+                box-shadow 0.2s ease;
+}
+
+#website-updates h2 {
+    margin-bottom: 0;
+}
+
+#website-updates p {
+    margin-top: 0;
+}
+
+#website-updates:hover {
+    background-color: #d9d3fa;
+    border-color: #413b5cb3;
+    box-shadow: 0 0 15px #8b7fc7b3;
 }
