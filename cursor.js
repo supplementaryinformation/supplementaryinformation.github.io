@@ -100,7 +100,7 @@ function animate() {
 animate();
 
 // Plays a ding when hovering over any of the nav boxes
-const navBoxes = document.querySelectorAll ('#nav-box > div');
+const navBoxes = document.querySelectorAll ('#nav-box > a');
 
 const hoverSound = new Audio('sounds/ding_1.mp3'); hoverSound.volume = 0.25;
 
